@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="app" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title Inventory</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        @Styles.Render("~/Content/css")
+        @Styles.Render("~/Content/themes/base/css")
+        @Scripts.Render("~/bundles/modernizr")
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/jqueryui")
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Inventory System</a>
+                </div>
+            </div>
+        </nav>
+        <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+
+        @Scripts.Render("~/bundles/angularjs")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>
