@@ -1,4 +1,4 @@
-# inventory
+# Inventory
 
 A sample inventory application using:
 - ASP.NET MVC
